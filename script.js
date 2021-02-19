@@ -7,6 +7,7 @@
 var temps_passer = 10000; // temps en ms
 var temps_decompte = temps_passer / 1000;
 var n = 1;
+var isplay = 0;
 /*
 ! Next / Back zone
 */
@@ -73,9 +74,31 @@ function pause() {
 	clearTimeout(time);
 	document.getElementById('bip').innerHTML = '\u23f8';
 	clearInterval(change);
+	isplay = 1;
 }
 
 function play() {
 	change = setInterval(next, temps_passer);
 	time = setTimeout(temps_moin, 1000);
+	isplay = 0;
+}
+/*
+ ! Zone event keyboard
+ */
+
+function quelle_touche(evenement) {
+	var touche = evenement.keyCode
+  console.log(touche)
+  if(touche==32 && isplay==0){
+    pause()
+  }
+  else if(touche==32 && isplay==1){
+    play()
+  }
+  else if(touche==113){
+    back()
+  }
+  else if(touche==100){
+    next()
+  }	
 }
