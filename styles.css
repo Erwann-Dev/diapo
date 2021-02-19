@@ -4,6 +4,7 @@ button {
 	border-radius: 80px;
 	background-color: cadetblue;
 	color: blue;
+	font-size: 30px;
 }
 
 body {
@@ -13,26 +14,6 @@ body {
 #picture {
 	width: 500px;
 	height: 500px;
-}
-
-#img_pause {
-	width: 45px;
-	height: 45px;
-}
-
-#img_play {
-	width: 45px;
-	height: 45px;
-}
-
-#img_next {
-	width: 45px;
-	height: 45px;
-}
-
-#img_back {
-	width: 45px;
-	height: 45px;
 }
 
 #bip {
