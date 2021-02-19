@@ -100,5 +100,38 @@ function quelle_touche(evenement) {
   }
   else if(touche==100){
     next()
-  }	
+  }
+  else if(touche==38){
+    n = 1
+    temps_decompte = temps_passer / 1000;
+    changeImage(n);
+    clearInterval(change);
+    change = setInterval(next, temps_passer);
+    temps_decompte = temps_passer / 1000;
+  }
+  else if(touche==233){
+    n = 2
+    temps_decompte = temps_passer / 1000;
+    changeImage(n);
+    clearInterval(change);
+    change = setInterval(next, temps_passer);
+    temps_decompte = temps_passer / 1000;
+  }
+  else if(touche==34){
+    n = 3
+    temps_decompte = temps_passer / 1000;
+    changeImage(n);
+    clearInterval(change);
+    change = setInterval(next, temps_passer);
+    temps_decompte = temps_passer / 1000;
+  }
+  else if(touche==39){
+    n = 4
+    temps_decompte = temps_passer / 1000;
+    changeImage(n);
+    clearInterval(change);
+    change = setInterval(next, temps_passer);
+    temps_decompte = temps_passer / 1000;
+  }
+  
 }
