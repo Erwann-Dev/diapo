@@ -1,8 +1,3 @@
-img {
-	width: 500px;
-	height: 500px;
-}
-
 button {
 	width: 100px;
 	height: 50px;
@@ -15,7 +10,31 @@ body {
 	background-color: rgb(59, 59, 59);
 }
 
+#picture {
+	width: 500px;
+	height: 500px;
+}
+
 #img_pause {
 	width: 45px;
 	height: 45px;
+}
+
+#img_play {
+	width: 45px;
+	height: 45px;
+}
+
+#img_next {
+	width: 45px;
+	height: 45px;
+}
+
+#img_back {
+	width: 45px;
+	height: 45px;
+}
+
+#bip {
+	font-size: 40px;
 }
